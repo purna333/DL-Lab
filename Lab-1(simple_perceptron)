@@ -1,0 +1,13 @@
+#SIMPLE PERCEPTRON
+
+import numpy as np
+def perceptron(x,w,b):
+  ans=np.dot(x,w)
+  ans+=b
+  return ans
+def Actfnctn(a):
+  if a>=0:
+    return 1
+  else:
+    return 0
+print(Actfnctn(perceptron([1,1],[0,1],0)))
